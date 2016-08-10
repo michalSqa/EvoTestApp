@@ -1,12 +1,7 @@
-# evo-app
+There are problems with used chart library, the bower distribution is old.
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+for problems go: https://jtblin.github.io/angular-chart.js/ to help with bower install.
 
-## Build & development
+And for the proper compilation u should change main file path in chart.js/bower.js to point to dist/Chart.js. At least that worked for me.
 
-Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
