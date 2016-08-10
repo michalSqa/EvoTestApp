@@ -73,8 +73,14 @@ body {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   background: linear-gradient(#ddf0fc, #d6ebfa);
-  height: 40px;
+  height: 35px;
   width: 100%;
+}
+
+.window-label-text {
+  position: relative;
+  left: 20px;
+  bottom: 2px;
 }
 
 .window-label-img {
@@ -83,23 +89,22 @@ body {
   bottom: 9px;
 }
 
-label {
-  text-shadow: 0 1px 1px #fff;
-  font-size: 16px;
-  color: #05415b;
-  left: 20px;
-  bottom: 2px;
-}
-
 .simple-window-content {
   background-color: white;
   height: 100%;
   width: 100%;
 }
 
+label {
+  text-shadow: 0 1px 1px #fff;
+  font-size: 16px;
+  color: #05415b;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
+    padding: 50px;
     max-width: 730px;
   }
 
