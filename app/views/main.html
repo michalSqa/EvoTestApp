@@ -1,29 +1,14 @@
 <div ng-init="init()">
 
   <simple-window title="Revenue by Solution" iconurl="images/icon_1.jpg">
-    <div layout="row">
-      <div class="chart-size-standard" flex="75">
-        <chart-canvas type="line" data="data2"></chart-canvas>
-      </div>
-
-      <div layout="column" flex="25" layout-fill class="info-panel">
-        <div flex="100" layout="column" class="info-container">
-          <div layout="row">
-            <div class="info-text-currency" flex="grow">$</div>
-            <div class="info-text">32,556</div>
-          </div>
-          <div flex="grow" class="info-description">Revenue Stream</div>
-        </div>
-        <div flex="100" class="info-button-container">
-            <button class="btn btn-default info-button" tabIndex="-1">
-              Revenue Analysis
-            </button>
-        </div>
-      </div>
-    </div>
+    <info-with-chart type="line", data="data"></info-with-chart>
   </simple-window>
 
   <simple-window title="Installations" iconurl="images/icon_2.jpg" class="md-padding">
-      <info-with-chart></info-with-chart>
+      <info-with-chart type="bar" data="installationsData"></info-with-chart>
+  </simple-window>
+
+  <simple-window title="Installations" iconurl="images/icon_2.jpg" class="md-padding">
+    <info-with-chart type="line" data="data2"></info-with-chart>
   </simple-window>
 </div>

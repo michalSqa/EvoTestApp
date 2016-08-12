@@ -8,9 +8,10 @@
  * Controller of the evoAppApp
  */
 angular.module('evoAppApp')
-  .controller('MainCtrl', ['$scope','$http', function ($scope, $http) {
+  .controller('MainCtrl', ['$scope','$http', 'dataService', function ($scope, $http, dataService) {
 
-    $scope.awesomeThings = [1, 2, 3];
+    $scope.installationsData;
+    $scope.revenuesData;
 
     $scope.chart_options = {
         responsive: true,
@@ -21,26 +22,24 @@ angular.module('evoAppApp')
     };
     $scope.labels = ["Week 48", "Week 49", "Week 50", "Week 51", "Week 52"];
     $scope.series = ['Series A', 'Series B', 'Series C'];
-    $scope.data2 = [
-        [28, 148, 240, 19, 86],
-        [65, 259, 280, 81, 40],
-        [65, 259, 280, 81, 40]
-      ];
 
-    $scope.chart_two_data = [
-      [128, 248, 240, 19, 86],
-      [265, 259, 280, 81, 40],
-      [165, 259, 481, 655, 40]
-    ];
+    $scope.data;
+
+    $scope.getRevenues= function() {
+      dataService.getRevenues().then(function(response){
+        $scope.revenuesData = response;
+      });
+    };
 
     $scope.getInstallations = function() {
-      $http.get('/api/installations').then(function(response) {
-        console.log('response', response.data);
+      dataService.getInstallations().then(function(response){
+        $scope.installationsData = response;
       });
     };
 
     $scope.init = function() {
       $scope.getInstallations();
+      $scope.getRevenues();
     };
 
 

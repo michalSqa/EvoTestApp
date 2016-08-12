@@ -2,17 +2,35 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/.bowerrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/components/simpleWindow/simpleWindow.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/backendMock.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/backendmocks.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/chartCanvasCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/main.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/simpleWindowCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/test.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/directives/chart-canvas.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/directives/infowithchart.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/directives/simple-window.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/services/dataservice.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/chart_canvas.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/components/chartCanvas.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/components/infoWithChart.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/components/simplewindow.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/main.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bower_components/chart.js/bower.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bower_components/chart.js/package.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dist/scripts/scripts.b93d1e97.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower_components/Chart.js/.bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower_components/Chart.js/.bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower_components/Chart.js/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower_components/Chart.js/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower_components/chart.js/.bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/karma.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/controllers/chartcanvas.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/controllers/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/controllers/simplewindow.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/controllers/test.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/services/dataservice.js" charset="UTF-8" />
   </component>
 </project>
