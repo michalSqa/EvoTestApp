@@ -1,0 +1,22 @@
+<div layout="row">
+  <div class="chart-size-standard" flex="75">
+    <chart-canvas></chart-canvas>
+  </div>
+
+  <div layout="column" flex="25" layout-fill class="info-panel">
+    <div flex="100" layout="column" class="info-container">
+      <div layout="row">
+        <div class="info-text-currency" flex="grow">{{data.info.currencyType}}</div>
+        <div class="info-text">{{data.info.value}}</div>
+      </div>
+      <div flex="grow" class="info-description">{{data.info.description}}</div>
+    </div>
+    <div flex="100" class="info-button-container">
+      <button class="btn btn-default info-button" tabIndex="-1">
+        {{data.info.buttonDescription}}
+      </button>
+    </div>
+  </div>
+</div>
+
+{{data}}

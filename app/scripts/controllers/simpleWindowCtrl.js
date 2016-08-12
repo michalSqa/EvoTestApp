@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name evoAppApp.controller:SimplewindowctrlCtrl
+ * @name evoAppApp.controller:MainCtrl
  * @description
- * # SimplewindowctrlCtrl
+ * # MainCtrl
  * Controller of the evoAppApp
  */
 angular.module('evoAppApp')

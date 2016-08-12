@@ -13,20 +13,9 @@ angular.module('evoAppApp')
     $scope.installationsData;
     $scope.revenuesData;
 
-    $scope.chart_options = {
-        responsive: true,
-        legend:{
-            position: 'bottom',
-            display: true
-        }
-    };
-    $scope.labels = ["Week 48", "Week 49", "Week 50", "Week 51", "Week 52"];
-    $scope.series = ['Series A', 'Series B', 'Series C'];
-
-    $scope.data;
-
     $scope.getRevenues= function() {
       dataService.getRevenues().then(function(response){
+        console.log('revenues', response);
         $scope.revenuesData = response;
       });
     };
