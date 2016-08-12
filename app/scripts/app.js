@@ -14,17 +14,40 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
+    'ngMockE2E',
     'ngTouch',
     'chart.js'
   ])
   .config(['ChartJsProvider', function (ChartJsProvider) {
-    // Configure all charts
+
     ChartJsProvider.setOptions({
       chartColors: ['#FF5252', '#FF8A80'],
-      responsive: false
+      responsive: true,
+      maintainAspectRatio: false,
+      borderWidth: 0,
+      gridLines: {
+        offsetGridLines: true
+      }
     });
-    // Configure all line charts
+
     ChartJsProvider.setOptions('line', {
-      showLines: false
+      showLines: true,
+      borderWidth: 10,
+      legend:{
+        position: 'bottom',
+        display: false,
+        labels: {
+          usePointStyle: true,
+          fontSize: 10
+        }
+      },
+      point: {
+        borderWidth: 5
+      }
     });
-  }])
+
+    ChartJsProvider.setOptions('bar', {
+      borderWidth: 5
+    });
+  }]);
+

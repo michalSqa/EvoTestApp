@@ -5,3 +5,5 @@ for problems go: https://jtblin.github.io/angular-chart.js/ to help with bower i
 And for the proper compilation u should change main file path in chart.js/bower.js to point to dist/Chart.js. At least that worked for me.
 
 
+for grunt test errors, install:
+npm install grunt-karma karma karma-phantomjs-launcher karma-jasmine jasmine-core phantomjs-prebuilt --save-dev

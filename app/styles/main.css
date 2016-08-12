@@ -60,8 +60,8 @@ body {
 }
 
 .simple-window {
-  width: 700px;
-  height: 325px;
+  width: 699px;
+  height: 234px;
   border-color: #83b5d6;
   border-width: 1px;
   border-style: solid;
@@ -85,7 +85,7 @@ body {
 
 .window-label-img {
   position: relative;
-  left: 15px;
+  left: 10px;
   bottom: 9px;
 }
 
@@ -99,6 +99,75 @@ label {
   text-shadow: 0 1px 1px #fff;
   font-size: 16px;
   color: #05415b;
+}
+
+.chart-size-standard {
+  width:480px;
+  max-width:480px;
+  height:140px;
+  max-height:140px;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.info-panel {
+  padding-right: 19px;
+  padding-top: 16px;
+}
+
+.info-container {
+  text-align: right;
+}
+
+.info-text {
+  font-family: MyriadPro;
+  font-size: 40px;
+  font-weight: bold;
+  color: #05415b;
+}
+
+.info-text-currency {
+  font-family: MyriadPro;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-right: 4px;
+  color: #2f6ca6;
+}
+
+.info-description {
+  font-family: MyriadPro;
+  font-size: 14px;
+  padding-top: 4px;
+  color: #05415b;
+}
+
+.info-button-container {
+  padding-top: 50px;
+  padding-left: 5px;
+  text-align: right;
+}
+
+.info-button {
+  background: linear-gradient(#1ebcea,#046c8a);
+  border: 2px solid #ffffff;
+  height: 31px;
+  width: 140px;
+  border-radius: 7px;
+  color: #fff;
+  font-family: MyriadPro;
+  box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.35);
+  padding: 5px 12px;
+}
+
+.info-button:focus {
+  color: #fff;
+  border-color: rgb(244, 244, 244);
+  outline-width: 0;
+}
+
+.info-button:active {
+  outline-width: 0 !important;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -123,4 +192,9 @@ label {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url("fonts/MyriadPro-Regular.otf") format("opentype");
 }
