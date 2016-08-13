@@ -9,18 +9,5 @@
  */
 angular.module('evoAppApp')
   .controller('ChartCanvasCtrl', ['$scope', function ($scope) {
-    $scope.chartType;
-
-    $scope.options = {
-      title: {
-        display: false,
-        text: 'Test title',
-        fontSize: 10,
-        fontStyle: 'normal',
-        fullWidth: true
-      }
-    };
-    $scope.showChart = function(type) {
-      return $scope.chartType == type;
-    };
+    $scope.colors = ['#ed6e37', '#259e01', '#15a0c8']
   }]);

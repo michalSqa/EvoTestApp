@@ -10,7 +10,7 @@ angular.module('evoAppApp')
   .directive('simpleWindow', function () {
     return {
       controller: 'SimpleWindowCtrl',
-      templateUrl: 'views/components/simplewindow.html',
+      templateUrl: 'views/components/simpleWindow.html',
       transclude: true,
       restrict: 'E',
       scope: {

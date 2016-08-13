@@ -1,7 +1,7 @@
-<div class="chart-canvas-container" >
-  <canvas class="chart chart-bar" chart-options="options" chart-data="data.chartData.data" chart-labels="data.chartData.labels"
-          chart-series="data.chartData.series" ng-if="showChart('bar')"></canvas>
+<div class="chart-canvas-container">
+  <canvas class="chart chart-bar" chart-options="options" chart-data="chart.data" chart-labels="chart.labels"
+          chart-series="chart.series" chart-colors="colors" ng-if="type=='bar'"></canvas>
 
-  <canvas class="chart chart-line" chart-options="options" chart-data="data.chartData.data" chart-labels="data.chartData.labels"
-          chart-series="data.chartData.series" chart-dataset-override="overrideData" ng-if="showChart('line')"></canvas>
+  <canvas class="chart chart-line" chart-options="options" chart-data="chart.data" chart-labels="chart.labels"
+          chart-series="chart.series" chart-colors="colors" chart-dataset-override="chart.chartDataOverride" ng-if="type=='line'"></canvas>
 </div>

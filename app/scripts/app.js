@@ -21,10 +21,8 @@ angular
   .config(['ChartJsProvider', function (ChartJsProvider) {
 
     ChartJsProvider.setOptions({
-      chartColors: ['#FF5252', '#FF8A80'],
       responsive: true,
       maintainAspectRatio: false,
-      borderWidth: 0,
       gridLines: {
         offsetGridLines: true
       }
@@ -32,22 +30,24 @@ angular
 
     ChartJsProvider.setOptions('line', {
       showLines: true,
-      borderWidth: 10,
-      legend:{
-        position: 'bottom',
-        display: false,
-        labels: {
-          usePointStyle: true,
-          fontSize: 10
-        }
+      elements: {
+      line: {
+        tension: 0,
+          borderWidth: 6
       },
       point: {
-        borderWidth: 5
+        radius: 4,
+          borderWidth: 2
       }
+    }
     });
 
     ChartJsProvider.setOptions('bar', {
-      borderWidth: 5
+      elements: {
+        rectangle: {
+          borderWidth: 0,
+        }
+      }
     });
   }]);
 

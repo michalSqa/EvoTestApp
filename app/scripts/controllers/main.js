@@ -15,7 +15,6 @@ angular.module('evoAppApp')
 
     $scope.getRevenues= function() {
       dataService.getRevenues().then(function(response){
-        console.log('revenues', response);
         $scope.revenuesData = response;
       });
     };
