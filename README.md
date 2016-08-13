@@ -10,10 +10,11 @@ npm install grunt-karma karma karma-phantomjs-launcher karma-jasmine jasmine-cor
 
 
 Brief description:
-I could really describe all the problem i had, but it would be just poking myself.
-Due to all the thing i started late with this task. I had a time to fiddle with some chart libs.
+I could really describe all the problem I had, but it would be just pointing myself.
+Due to all the thing i started late with this task. 
 I decided on Angular, first of all because I didnt write in 1.x in a while, and i thouhgt it would be EZ.
-Used Yoeman generator for basic project, and setup (see 'grunt test errors').
-Well on one hand it was fun. But most problems came from chart drawing lib I used, which is a wrapper (not that good), for JS lib chart.js.
+And i could use Yoeman generator for basic project, and setup (see 'grunt test errors').
+Since i spend few hours with libraries for charts, i decided to use the one that 'didnt work at first'. 
+Because it had best documentation (original chart.js). But it's just a wrapper, not that good I think.
+And caused few problems here and there. And in the end I didnt skin charts as they should be skinned.
 I did a 'backendless approach', mocked http requests in seperate file. Its flexible and You can develope fast (unless u change the model).
-
